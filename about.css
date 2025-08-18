@@ -1,0 +1,147 @@
+.about-section{
+    width: 60%;
+    margin: auto;
+}
+.about-section .top{
+    text-align: center;
+
+}
+.about-section .top h1{
+    font-size: 3em;
+    font-weight: 400;
+  
+}
+.about-section .top p{
+    font-size: 1em;
+    color: grey;
+}
+.story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    gap: 2em;
+}
+.story img{
+    height: 60vh;
+    border-radius: 1em;
+}
+.story .story-desc h2{
+    font-weight: 500;
+}
+.story .story-desc p{
+    color: grey;
+    font-size: 0.9em;
+}
+.values{
+    margin: 2rem;
+}
+.values .head{
+    text-align: center;
+    margin-bottom: 3em;
+}
+.values .head h2{
+    font-weight: 400;
+}
+.values .value-cards .cards img{
+    height: 1.8em;
+    background-color: rgb(219, 216, 216);
+    padding: 1em;
+    border-radius: 50%;
+}
+.values .value-cards{
+    display:flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+.values .value-cards .cards{
+    text-align: center;
+    width: 20em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.values .value-cards .cards h3{
+    font-weight: 400;
+}
+
+.values .value-cards .cards p{
+    color: grey;
+    font-size: 0.9em;
+}
+/* ================== RESPONSIVE ================== */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .about-section {
+        width: 80%;
+    }
+
+    .story {
+        flex-direction: column;
+        padding: 2em;
+        text-align: center;
+    }
+
+    .story img {
+        width: 100%;
+        height: auto;
+    }
+
+    .values .value-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .values .value-cards .cards {
+        width: 45%;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .about-section {
+        width: 90%;
+    }
+
+    .about-section .top h1 {
+        font-size: 2em;
+    }
+
+    .story {
+        padding: 1.5em;
+        gap: 1.5em;
+    }
+
+    .values .value-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .values .value-cards .cards {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5em;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .about-section .top h1 {
+        font-size: 1.5em;
+    }
+
+    .story {
+        padding: 1em;
+    }
+
+    .values .value-cards .cards {
+        width: 100%;
+    }
+}

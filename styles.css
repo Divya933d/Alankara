@@ -1,0 +1,364 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to bottom, #e9ecef, #df6604); */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid #000; */
+    padding: 0 5.5em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(214, 206, 206);
+}
+
+.header .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.header .brand img {
+    height: 2em;
+    width: 2em;
+}
+
+.header .brand h3 {
+    font-weight: 600;
+}
+
+.header .nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5em;
+    /* border: 1px solid red; */
+}
+
+.header .nav-menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: small;
+    padding: 0.5em 0.8em;
+    border-radius: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header .nav-menu ul li a:hover {
+    background-color: #000;
+    color: white;
+}
+
+.header .nav-menu ul li a.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.home-page .home-img img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.home-page .home-desc {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    right: 24%;
+    color: white;
+
+
+}
+
+.home-page .home-desc .top {
+    text-align: center;
+}
+
+.home-page .home-desc .top h1 {
+    font-size: 4em;
+    font-weight: 400;
+    /* border: 1px solid red; */
+    margin-bottom: -0.2em;
+
+}
+
+/* .home-page .home-desc .top p{
+    font-size: 1.3em;
+} */
+.home-page .home-desc .down {
+    text-align: center;
+    display: flex;
+    gap: 2em;
+    /* border: 1px solid white; */
+}
+
+.home-page .home-desc .down button {
+    background-color: white;
+    color: black;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    font-size: 0.8em;
+    cursor: pointer;
+    width: 10em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-page .home-desc .down button:hover {
+    background-color: black;
+    color: white;
+}
+
+.services {
+    /* height:80vh; */
+    width: 100%;
+    text-align: center;
+}
+
+.services p {
+    color: grey;
+}
+
+.services .heading {
+    margin: 3em 0;
+}
+
+.heading h2 {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.services .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 5em 0;
+}
+
+.services .content .card-content {
+    box-sizing: border-box;
+    border: 0.01em solid rgb(209, 205, 205);
+    width: 20em;
+    height: 14em;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+
+.services .content .card-content h3 {
+    font-weight: 400;
+}
+
+.services .content .card-content .img-box img {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(209, 205, 205);
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.projects {
+    /* background-color: rgb(247, 247, 247); */
+    text-align: center;
+    /* height: 100vh; */
+
+}
+
+.projects .heading {
+    /* border: 1px solid rgb(247, 247, 247); */
+    /* border: none; */
+}
+
+.projects .heading h2 {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.projects p {
+    color: grey;
+}
+
+.projects .project-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4em;
+
+
+}
+
+.projects .project-content .content h3 {
+    font-weight: 400;
+}
+
+.projects .project-content .content img {
+    height: 35vh;
+    width: 60vh;
+    border-radius: 1em;
+}
+
+.projects .project-btn {
+    margin-top: 2em;
+}
+
+.projects .project-btn button {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    font-size: 0.8em;
+    cursor: pointer;
+    width: 10em;
+}
+
+.foot {
+    background-color: black;
+}
+
+.footer {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 2em;
+    font-size: small;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#copy {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    font-size: x-small;
+}
+
+   .menu-toggle {
+        display: none;
+        font-size: 2em;
+        cursor: pointer;
+        z-index: 1001;
+        /* make sure it stays above */
+    }
+/* ================== RESPONSIVE ================== */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .header {
+        padding: 0 2em;
+    }
+
+    .projects .project-content {
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .projects .project-content .content img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+
+    /* Hide hamburger on desktop */
+ 
+
+    /* Mobile styles */
+        .header {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            display: block;
+            /* show hamburger */
+        }
+
+        .nav-menu {
+            display: none;
+            /* hide by default */
+            position: absolute;
+            top: 60px;
+            /* adjust based on header height */
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding: 1em;
+            z-index: 1000;
+        }
+
+        .nav-menu ul {
+            flex-direction: column;
+            gap: 1em;
+            padding-left: 0;
+        }
+
+        .nav-menu.active {
+            display: flex;
+            /* show when toggled */
+            flex-direction: column;
+        }
+
+
+    .home-page .home-desc {
+        position: static;
+        padding: 2em;
+        text-align: center;
+        color: black;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    .home-page .home-desc .top h1 {
+        font-size: 2em;
+    }
+
+    .services .content {
+        flex-direction: column;
+    }
+
+    .services .content .card-content {
+        width: 90%;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5em;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .home-page .home-desc .down {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .projects .project-content {
+        flex-direction: column;
+    }
+
+    .projects .project-content .content img {
+        width: 100%;
+        height: auto;
+    }
+}

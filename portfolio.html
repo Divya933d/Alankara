@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="portfolio.css">
+  
+</head>
+
+<body>
+<!-- Menu toggle (hamburger) -->
+
+
+
+    <div class="header">
+        <!-- brand -->
+        <div class="brand">
+            <img src="assets/logo.png" alt="">
+            <h3>InteriorStudio</h3>
+        </div>
+        <!-- nav-bars -->
+         <div class="menu-toggle" id="menuToggle">
+    ☰
+</div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="top">
+            <h1>Our Portfolio</h1>
+            <p>Explore our diverse collection of interior design projects, from residential spaces to commercial
+                environments, each crafted with attention to detail and client vision.</p>
+        </div>
+    </div>
+
+    <div class="project-preview">
+        <div class="preview-cards">
+            <img src="assets/preview-one.jpg" alt="">
+            <div class="card-desc">
+                <h6>Residential</h6>
+                <h3>Modern Living Room</h3>
+                <p>A contemporary open-plan living space featuring clean lines, neutral tones, and natural materials.
+                </p>
+                <div class="features">
+                    <p>Modern</p>
+                    <p>Minimalist</p>
+                    <p>Open Plan</p>
+                </div>
+            </div>
+        </div>
+        <div class="preview-cards">
+            <img src="assets/Lotus Design.jpg" alt="">
+            <div class="card-desc">
+                <h6>Residential</h6>
+                <h3>Luxury Master Bedroom</h3>
+                <p>An elegant bedroom suite designed for comfort and relaxation with premium materials and finishes.
+                </p>
+                <div class="features">
+                    <p>Luxury</p>
+                    <p>Elegant</p>
+                    <p>Comfort</p>
+                </div>
+            </div>
+        </div>
+        <div class="preview-cards">
+            <img src="assets/Kitchen.jpg" alt="">
+            <div class="card-desc">
+                <h6>Residential</h6>
+                <h3>Contemporary Kitchen</h3>
+                <p>A functional and stylish kitchen with state-of-the-art appliances and smart storage solutions.
+                </p>
+                <div class="features">
+                    <p>Contemporary</p>
+                    <p>Functional</p>
+                    <p>Smart Storage</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-cards">
+            <img src="assets/preview-four.jpg" alt="">
+            <div class="card-desc">
+                <h6>Residential</h6>
+                <h3>Minimalist Design Studio</h3>
+                <p>A clean, organized workspace that promotes creativity and focus with natural lighting.
+                </p>
+                <div class="features">
+                    <p>Minimalist</p>
+                    <p>Workspace</p>
+                    <p>Natural Light</p>
+                </div>
+            </div>
+        </div>
+        <div class="preview-cards">
+            <img src="assets/dining.jpg" alt="">
+            <div class="card-desc">
+                <h6>Residential</h6>
+                <h3>Elegant Dining Room</h3>
+                <p>A sophisticated dining space perfect for entertaining with warm lighting and rich textures.
+                </p>
+                <div class="features">
+                    <p>Elegant</p>
+                    <p>Entertaining</p>
+                    <p>Warm Lighting</p>
+                </div>
+            </div>
+        </div>
+        <div class="preview-cards">
+            <img src="assets/preview-six.jpg" alt="">
+            <div class="card-desc">
+                <h6>Commercial</h6>
+                <h3>Creative Office Space</h3>
+                <p>An inspiring office environment designed to boost productivity and employee well-being.
+                </p>
+                <div class="features">
+                    <p>Creative</p>
+                    <p>Productive</p>
+                    <p>Wellness</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="foot">
+        <div class="footer" id="contact">
+            <div class="foot-card">
+                <h3>InteriorStudio</h3>
+                <p>Creating beautiful, functional spaces that enhance <br>your lifestyle since 2015.</p>
+            </div>
+            <div class="foot-card">
+                <h3>Services</h3>
+                <p>Residential Design</p>
+                <p>Commercial Spaces</p>
+                <p>Design Consultation</p>
+                <p>Project Management</p>
+            </div>
+            <div class="foot-card">
+                <h3>Company</h3>
+                <p>About Us</p>
+                <p>Our Portfolio</p>
+                <p>Client Reviews</p>
+                <p>Careers</p>
+            </div>
+            <div class="foot-card">
+                <h3>Contact</h3>
+                <p> <a href="mailto:mdivyalochan@gmail.com">mdivyalochan@gmail.com</a> </p>
+                <p><a href="mailto:rajeeblochan@gmail.com">rajeeblochan@gmail.com</a></p>
+                <p><a href="tel:+919337316177">+91 9337316177</a></p>
+                <p><a href="tel:+918984797900">+91 8984797900</a></p>
+            </div>
+        </div>
+        <div id="copy">
+            <p>© 2025 InteriorStudio. All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <!-- Product Modal -->
+<!-- Product Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="modal-gallery">
+      <button id="prevBtn">&#10094;</button>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div id="modalFeatures"></div>
+      </div>
+      <button id="nextBtn">&#10095;</button>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+<script src="script.js"></script>
+  <script src="toggle.js"></script>
+</html>
