@@ -346,6 +346,9 @@ body {
         width: 90%;
         height: auto;
     }
+    .projects .project-content .content{
+        width: 80%;
+    }
 
     .footer {
         flex-direction: column;
