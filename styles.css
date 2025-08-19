@@ -79,8 +79,10 @@ body {
     right: 24%; */
     color: white;
     background: url(assets/back-image.png);
-
-
+    /* background-position: center; */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .home-page .home-desc .top {
